@@ -1,6 +1,6 @@
 api:
   tableId-service:
-    uri: http://TableId-service/tableid
+    uri: http://TableId-service:8091/tableid
   product-service:
     uri: http://localhost:8083/product
   customer-service:
