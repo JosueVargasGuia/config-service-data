@@ -1,5 +1,5 @@
-api: 
-  uri: 
+api:
+  uri:
     tableId-service: http://TableId-service:8091/tableid
     product-service: http://product-service:8083/product
     customer-service: http://customer-service:8087/customer
