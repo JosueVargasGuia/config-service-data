@@ -1,0 +1,32 @@
+api:
+  tableId-service:
+    uri: http://TableId-service:8091/tableid
+  product-service:
+    uri: http://product-service:8083/product
+  customer-service:
+    uri: http://customer-service:8087/customer
+  movement-account-service:
+    uri: http://movement-account-service:8088/movement-account
+server:
+  port: '8086'
+spring:
+  data:
+    mongodb:
+      database: bank
+      port: '27017'
+      host: localhost
+#server:
+#  port: ${PORT:${SERVER_PORT:0}}      
+feign:
+  circuitbreaker:
+    enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8092/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
+#  instance:
+#    instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}  

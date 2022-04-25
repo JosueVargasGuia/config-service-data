@@ -1,0 +1,26 @@
+api:
+  tableId-service:
+    uri: http://TableId-service:8091/tableid
+  customer-service:
+    uri: http://customer-service:8087/customer
+  account-service:
+    uri: http://account-service:8086/account
+server:
+  port: '8090'
+spring:
+  data:
+    mongodb:
+      database: bank
+      port: '27017'
+      host: localhost
+feign:
+  circuitbreaker:
+    enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8092/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
