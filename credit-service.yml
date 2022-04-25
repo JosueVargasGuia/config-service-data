@@ -6,7 +6,7 @@ api:
   customer-service:
     uri: http://customer-service:8087/customer
   movementCredit-service:
-    uri: http://movement-account-service:8085/movementCredit
+    uri: http://movementCredit-service:8085/movementCredit
 server:
   port: '8084'
 spring:
