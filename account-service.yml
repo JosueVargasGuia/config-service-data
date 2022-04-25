@@ -7,6 +7,9 @@ api:
     uri: http://customer-service:8087/customer
   movement-account-service:
     uri: http://movement-account-service:8088/movement-account
+api:
+  uri:
+    tableId-service: http://TableId-service:8091/tableid
 server:
   port: '8086'
 spring:
