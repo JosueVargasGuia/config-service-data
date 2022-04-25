@@ -13,3 +13,14 @@ spring:
       database: bank
       port: '27017'
       host: localhost
+feign:
+  circuitbreaker:
+    enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8092/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
