@@ -9,6 +9,11 @@ spring:
 feign:
   circuitbreaker:
     enabled: true
+  client: 
+    config: 
+      default: 
+        connectTimeout: 10000 
+        readTimeout: 20000
 eureka:
   client:
     service-url:
@@ -17,6 +22,6 @@ eureka:
     register-with-eureka: true
   instance:
     hostname: localhost
-api:
-  uri:
-    tableId-service: http://TableId-service:8091/tableid 
+api:  
+    tableId-service:
+      uri: TableId-service/tableid 

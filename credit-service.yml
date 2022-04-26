@@ -1,12 +1,12 @@
 api:
   tableId-service:
-    uri: http://TableId-service:8091/tableid
+    uri: TableId-service/tableid
   product-service:
-    uri: http://product-service:8083/product
+    uri: product-service/product
   customer-service:
-    uri: http://customer-service:8087/customer
+    uri: customer-service/customer
   movementCredit-service:
-    uri: http://movementCredit-service:8085/movementCredit
+    uri: movementCredit-service/movementCredit
 server:
   port: '8084'
 spring:
@@ -18,6 +18,11 @@ spring:
 feign:
   circuitbreaker:
     enabled: true
+  client: 
+    config: 
+      default: 
+        connectTimeout: 10000 
+        readTimeout: 20000
 eureka:
   client:
     service-url:
