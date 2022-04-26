@@ -19,4 +19,4 @@ eureka:
     hostname: localhost
 api:
   uri:
-    tableId-service: http://TableId-service:8091/tableid 
+    tableId-service: TableId-service/tableid 
