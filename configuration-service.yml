@@ -1,6 +1,6 @@
 api:
   tableId-service:
-    uri: http://TableId-service:8091/tableid
+    uri: TableId-service/tableid
 server:
   port: '8082'
 spring:
@@ -9,9 +9,9 @@ spring:
       database: bank
       port: '27017'
       host: localhost
-#feign:
-#  circuitbreaker:
-#    enabled: true
+feign:
+  circuitbreaker:
+    enabled: true
 eureka:
   client:
     service-url:
