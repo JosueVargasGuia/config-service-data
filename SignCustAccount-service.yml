@@ -19,10 +19,10 @@ eureka:
     hostname: localhost
 api:
   account-service:
-    uri: http://account-service:8086/account
+    uri: account-service/account
   product-service: 
-    uri: http://product-service:8083/product
+    uri: product-service/product
   customer-service:
-    uri: http://customer-service:8087/customer
+    uri: customer-service/customer
   tableId-service:
-    uri: http://TableId-service:8091/tableid
+    uri: TableId-service/tableid
