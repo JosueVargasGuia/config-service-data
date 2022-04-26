@@ -1,12 +1,12 @@
 api:
   tableId-service:
-    uri: http://TableId-service:8091/tableid
+    uri: TableId-service/tableid
   product-service:
-    uri: http://product-service:8083/product
+    uri: product-service/product
   customer-service:
-    uri: http://customer-service:8087/customer
+    uri: customer-service/customer
   movement-account-service:
-    uri: http://movement-account-service:8088/movement-account
+    uri: movement-account-service/movement-account
 server:
   port: '8086'
 spring:
