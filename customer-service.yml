@@ -1,6 +1,6 @@
 api:
   tableId-service:
-    uri: http://TableId-service:8091/tableid
+    uri: TableId-service/tableid
 server:
   port: '8087'
 spring:
