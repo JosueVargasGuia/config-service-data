@@ -17,6 +17,6 @@ eureka:
     register-with-eureka: true
   instance:
     hostname: localhost
-api:
-  uri:
-    tableId-service: TableId-service/tableid 
+api:  
+    tableId-service:
+      uri: TableId-service/tableid 
