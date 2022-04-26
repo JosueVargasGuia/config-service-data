@@ -8,7 +8,7 @@ spring:
       port: 27017
 api:
   tableId-service:
-    uri: http://TableId-service:8091/tableid
+    uri: TableId-service/tableid
   account-service:
     uri: account-service/account
 feign:
