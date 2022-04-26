@@ -9,9 +9,9 @@ spring:
       database: bank
       port: '27017'
       host: localhost
-#feign:
-#  circuitbreaker:
-#    enabled: true
+feign:
+  circuitbreaker:
+    enabled: true
 eureka:
   client:
     service-url:
