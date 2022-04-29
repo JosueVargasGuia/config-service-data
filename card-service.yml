@@ -1,6 +1,14 @@
 api:
   tableId-service:
     uri: TableId-service/tableid 
+  holder-account-service:
+    uri: holder-account-service/holder-account
+  SignCustAccount-service:
+    uri: holder-account-service/signCustAccount
+  account-service:
+    uri: account-service/account 
+  credit-service:
+    uri: credit-service/credit      
 server:
   port: 8094
 spring:
