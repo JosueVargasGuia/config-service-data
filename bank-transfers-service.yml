@@ -1,6 +1,10 @@
 api:
   tableId-service:
-    uri: TableId-service/tableid 
+    uri: TableId-service/tableid
+  account-service:
+    uri: account-service/account
+  credit-service:
+    uri: credit-service/credit    
 server:
   port: 8093
 spring:
