@@ -4,7 +4,11 @@ api:
   account-service:
     uri: account-service/account
   credit-service:
-    uri: credit-service/credit    
+    uri: credit-service/credit
+  movement-account-service:
+    uri: movement-account-service/movement-account
+  movementCredit-service:
+    uri: movementCredit-service/movementCredit  
 server:
   port: 8093
 spring:
