@@ -11,6 +11,8 @@ api:
     uri: configuration-service/configuration
   card-service:
     uri: card-service/card
+  credit-service:
+    uri: credit-service/credit
 server:
   port: '8086'
 spring:
