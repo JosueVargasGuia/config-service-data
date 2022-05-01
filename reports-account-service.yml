@@ -7,6 +7,8 @@ api:
     uri: credit-service/credit
   account-service:
     uri: account-service/account
+  movement-account-service:
+    uri: movement-account-service/movement-account
 server:
   port: '8095'
 spring:
