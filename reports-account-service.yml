@@ -3,18 +3,14 @@ api:
     uri: TableId-service/tableid
   product-service:
     uri: product-service/product
-  customer-service:
-    uri: customer-service/customer
-  movement-account-service:
-    uri: movement-account-service/movement-account
-  configuration-service:
-    uri: configuration-service/configuration
-  card-service:
-    uri: card-service/card
   credit-service:
     uri: credit-service/credit
+  account-service:
+    uri: account-service/account
+  movement-account-service:
+    uri: movement-account-service/movement-account
 server:
-  port: '8086'
+  port: '8095'
 spring:
   data:
     mongodb:

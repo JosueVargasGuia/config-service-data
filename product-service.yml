@@ -23,7 +23,7 @@ eureka:
   instance:
     hostname: localhost
 api:  
-    tableId-service:
-      uri: TableId-service/tableid 
-    configuration-service:
-      uri: configuration-service/configuration 
+  tableId-service:
+    uri: TableId-service/tableid 
+  configuration-service:
+    uri: configuration-service/configuration 
