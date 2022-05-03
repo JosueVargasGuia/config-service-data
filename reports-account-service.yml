@@ -9,6 +9,8 @@ api:
     uri: account-service/account
   movement-account-service:
     uri: movement-account-service/movement-account
+  customer-service:
+    uri: customer-service/customer
 server:
   port: '8095'
 spring:
