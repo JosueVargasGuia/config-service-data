@@ -12,7 +12,7 @@ api:
   customer-service:
     uri: customer-service/customer
 server:
-  port: '8095'
+  port: '8097'
 spring:
   data:
     mongodb:
