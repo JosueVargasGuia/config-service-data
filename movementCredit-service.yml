@@ -8,9 +8,9 @@ spring:
       port: 27017
 api:
   credit-service:
-    uri: http://credit-service:8084/credit
+    uri: credit-service/credit
   tableId-service:
-    uri: http://TableId-service:8091/tableid
+    uri: TableId-service/tableid
 feign:
   circuitbreaker:
     enabled: true
