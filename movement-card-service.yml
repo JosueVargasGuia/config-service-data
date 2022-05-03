@@ -1,20 +1,13 @@
 server:
-  port: 8085
+  port: 8095
 spring:
   data:
     mongodb:
       database: bank
+      port: '27017'
       host: localhost
-      port: 27017
-api:
-  credit-service:
-    uri: credit-service/credit
-  tableId-service:
-    uri: TableId-service/tableid
-  configuration-service:
-    uri: configuration-service/configuration
-  product-service:
-    uri: product-service/product
+#server:
+#  port: ${PORT:${SERVER_PORT:0}}      
 feign:
   circuitbreaker:
     enabled: true
@@ -31,3 +24,5 @@ eureka:
     register-with-eureka: true
   instance:
     hostname: localhost
+#  instance:
+#    instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}  

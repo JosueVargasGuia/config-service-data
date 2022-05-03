@@ -4,11 +4,13 @@ api:
   holder-account-service:
     uri: holder-account-service/holder-account
   SignCustAccount-service:
-    uri: holder-account-service/signCustAccount
+    uri: SignCustAccount-service/signCustAccount
   account-service:
     uri: account-service/account 
   credit-service:
-    uri: credit-service/credit      
+    uri: credit-service/credit
+  account-card-service:
+    uri: account-card-service/accountcard 
 server:
   port: 8094
 spring:
