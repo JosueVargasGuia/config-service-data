@@ -1,18 +1,5 @@
-api:
-  tableId-service:
-    uri: TableId-service/tableid 
-  holder-account-service:
-    uri: holder-account-service/holder-account
-  SignCustAccount-service:
-    uri: SignCustAccount-service/signCustAccount
-  account-service:
-    uri: account-service/account 
-  credit-service:
-    uri: credit-service/credit
-  account-card-service:
-    uri: account-card-service/accountcard 
 server:
-  port: 8094
+  port: 8096
 spring:
   data:
     mongodb:
