@@ -16,7 +16,9 @@ api:
   movementCredit-service:
     uri: movementCredit-service/movementCredit
   bank-transfers-service:
-    uri: bank-transfers-service/bank-transfer  
+    uri: bank-transfers-service/bank-transfer
+  bank-transfers-service:
+    uri: movement-card-service/movement-card 
 server:
   port: 8094
 spring:
