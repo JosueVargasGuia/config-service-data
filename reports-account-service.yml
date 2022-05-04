@@ -10,9 +10,9 @@ api:
   movement-account-service:
     uri: movement-account-service/movement-account
   customer-service:
-    uri: customer-service/customer
+    uri: customer-service/customer 
   movementCredit-service:
-    uri: movementCredit-service/movementCredit
+    uri: movementCredit-service/movementCredit 
 server:
   port: '8097'
 spring:
