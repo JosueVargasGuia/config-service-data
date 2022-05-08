@@ -1,0 +1,24 @@
+server:
+  port: 9080
+spring:
+  data:
+    mongodb:
+      database: bank
+      port: '27017'
+      host: localhost     
+#feign:
+#  circuitbreaker:
+#    enabled: true
+#  client: 
+#    config: 
+#      default: 
+#        connectTimeout: 10000 
+#        readTimeout: 20000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8092/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
