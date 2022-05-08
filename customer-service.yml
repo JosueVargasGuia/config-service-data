@@ -13,6 +13,25 @@ spring:
       database: bank
       port: '27017'
       host: localhost
+  redis:
+    host: 127.0.0.1.15
+    port: 6379
+  kafka:    
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      bootstrap-servers:
+      - 127.0.0.1:9092   
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+    producer:      
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers:
+      - 127.0.0.1:9092      
 feign:
   circuitbreaker:
     enabled: true
@@ -20,8 +39,7 @@ feign:
     config: 
       default: 
         connectTimeout: 10000 
-        readTimeout: 20000
-    
+        readTimeout: 20000    
 eureka:
   client:
     service-url:
