@@ -1,21 +1,11 @@
-api:
-  tableId-service:
-    uri: TableId-service/tableid
-  account-service:
-    uri: account-service/account 
-  credit-service:
-    uri: credit-service/credit
-  kafka-uri:
-    customer-topic: customer-wallet
-    customer-topic-respose: customer-topic-respose
 server:
-  port: '8087'
+  port: 9081
 spring:
   data:
     mongodb:
       database: bank
       port: '27017'
-      host: localhost
+      host: localhost     
   redis:
     host: 127.0.0.1.15
     port: 6379
@@ -34,15 +24,15 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       bootstrap-servers:
-      - 127.0.0.1:9092      
-feign:
-  circuitbreaker:
-    enabled: true
-  client: 
-    config: 
-      default: 
-        connectTimeout: 10000 
-        readTimeout: 20000    
+      - 127.0.0.1:9092
+#feign:
+#  circuitbreaker:
+#    enabled: true
+#  client: 
+#    config: 
+#      default: 
+#        connectTimeout: 10000 
+#        readTimeout: 20000
 eureka:
   client:
     service-url:
