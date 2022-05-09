@@ -27,7 +27,8 @@ spring:
       - 127.0.0.1:9092
 api:
   kafka-uri:
-    customer-service: customer-wallet
+    customer-topic: customer-wallet
+    movement-wallet-topic: movement-wallet
 #feign:
 #  circuitbreaker:
 #    enabled: true
