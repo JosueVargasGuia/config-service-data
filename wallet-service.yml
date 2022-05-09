@@ -29,6 +29,7 @@ api:
   kafka-uri:
     customer-topic: customer-wallet
     movement-wallet-topic: movement-wallet
+    customer-topic-save: customer-wallet-save
 #feign:
 #  circuitbreaker:
 #    enabled: true
