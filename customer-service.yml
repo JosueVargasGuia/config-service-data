@@ -7,7 +7,7 @@ api:
     uri: credit-service/credit
   kafka-uri:
     customer-topic: customer-wallet
-    customer-topic-save: customer-wallet-save
+    customer-topic-respose: customer-topic-respose
 server:
   port: '8087'
 spring:
