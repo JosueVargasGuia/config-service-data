@@ -18,7 +18,10 @@ api:
   bank-transfers-service:
     uri: bank-transfers-service/bank-transfer
   movement-card-service:
-    uri: movement-card-service/movement-card 
+    uri: movement-card-service/movement-card
+  kafka-uri:
+    card-topic: card-topic
+    card-topic-respose: card-topic-respose  
 server:
   port: 8094
 spring:
