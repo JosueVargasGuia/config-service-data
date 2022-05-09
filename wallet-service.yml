@@ -28,8 +28,10 @@ spring:
 api:
   kafka-uri:
     customer-topic: customer-wallet
+    customer-topic-respose: customer-wallet-respose        
+    card-topic: card-topic
+    card-topic-respose: card-topic-respose
     movement-wallet-topic: movement-wallet
-    customer-topic-save: customer-wallet-save
 #feign:
 #  circuitbreaker:
 #    enabled: true
