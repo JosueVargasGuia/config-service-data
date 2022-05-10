@@ -6,11 +6,31 @@ spring:
       database: bank
       host: localhost
       port: 27017
+  kafka:    
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      bootstrap-servers:
+      - 127.0.0.1:9092   
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+    producer:      
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers:
+      - 127.0.0.1:9092
+
 api:
   tableId-service:
     uri: TableId-service/tableid
   account-service:
     uri: account-service/account
+  kafka-uri:    
+    tranfers-wallet-topic: tranfers-wallet-topic
+    tranfers-wallet-topic-respose: tranfers-wallet-topic-respose
 feign:
   circuitbreaker:
     enabled: true
