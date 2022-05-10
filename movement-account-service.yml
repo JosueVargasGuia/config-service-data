@@ -11,6 +11,9 @@ api:
     uri: TableId-service/tableid
   account-service:
     uri: account-service/account
+  kafka-uri:    
+    tranfers-wallet-topic: tranfers-wallet-topic
+    tranfers-wallet-topic-respose: tranfers-wallet-topic-respose
 feign:
   circuitbreaker:
     enabled: true

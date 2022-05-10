@@ -32,7 +32,7 @@ api:
     card-topic: card-topic
     card-topic-respose: card-topic-respose
     movement-wallet-topic: movement-wallet
-    movement-wallet-topic-respone: movement-wallet-respone
+#    movement-wallet-topic-respone: movement-wallet-respone
 #feign:
 #  circuitbreaker:
 #    enabled: true
