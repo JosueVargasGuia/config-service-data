@@ -28,7 +28,9 @@ spring:
 api:
   kafka-uri:
     movement-wallet-topic: movement-wallet
-    movement-wallet-topic-respone: movement-wallet-respone
+    tranfers-wallet-topic: tranfers-wallet-topic
+    tranfers-wallet-topic-respose: tranfers-wallet-topic-respose
+#    movement-wallet-topic-respone: movement-wallet-respone
 #feign:
 #  circuitbreaker:
 #    enabled: true
