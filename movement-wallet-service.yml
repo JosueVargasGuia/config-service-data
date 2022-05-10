@@ -25,6 +25,10 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       bootstrap-servers:
       - 127.0.0.1:9092
+api:
+  kafka-uri:
+    movement-wallet-topic: movement-wallet
+    movement-wallet-topic-respone: movement-wallet-respone
 #feign:
 #  circuitbreaker:
 #    enabled: true
