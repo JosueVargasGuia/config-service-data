@@ -29,3 +29,13 @@ eureka:
     register-with-eureka: true
   instance:
     hostname: localhost
+logging:
+  file:
+    name: log/${spring.application.name}.log   
+  logback:
+    rollingpolicy:
+      max-file-size: 3MB
+      file-name-pattern: log/${spring.application.name}-%d{yyyy-MM-dd}.%i.log
+      total-size-cap: 100MB
+      clean-history-on-start: true
+      max-history: 10

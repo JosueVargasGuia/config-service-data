@@ -6,8 +6,12 @@ spring:
       database: bank
       port: '27017'
       host: localhost     
+  cache:
+    type: redis 
+    redis:
+      time-to-live: 60000
   redis:
-    host: 127.0.0.1.15
+    host: 127.0.0.1
     port: 6379
   kafka:    
     consumer:
@@ -47,3 +51,13 @@ eureka:
     register-with-eureka: true
   instance:
     hostname: localhost
+logging:
+  file:
+    name: log/${spring.application.name}.log   
+  logback:
+    rollingpolicy:
+      max-file-size: 3MB
+      file-name-pattern: log/${spring.application.name}-%d{yyyy-MM-dd}.%i.log
+      total-size-cap: 100MB
+      clean-history-on-start: true
+      max-history: 10
