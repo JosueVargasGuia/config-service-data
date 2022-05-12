@@ -28,7 +28,7 @@ spring:
 api:
   kafka-uri:
     customer-topic: customer-wallet
-#    customer-topic-respose: customer-topic-respose 
+    customer-topic-respose: customer-topic-respose 
 #    card-topic: card-topic
 #    card-topic-respose: card-topic-respose
 #    movement-wallet-topic: movement-wallet
