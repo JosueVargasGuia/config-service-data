@@ -29,7 +29,8 @@ api:
   kafka-uri:
     purchase-topic: purchase-topic
     purchase-topic-respose: purchase-topic-respose
-
+    purchase-agree-topic: purchase-agree-topic
+    purchase-agree-topic-respose: purchase-agree-topic-respose
 eureka:
   client:
     service-url:
