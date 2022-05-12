@@ -27,8 +27,8 @@ spring:
       - 127.0.0.1:9092
 api:
   kafka-uri:
-  exchange-topic: exchange-topic
-  exchange-topic-respose: exchange-topic-respose
+   exchange-topic: exchange-topic
+   exchange-topic-respose: exchange-topic-respose
 eureka:
   client:
     service-url:
