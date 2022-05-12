@@ -27,7 +27,7 @@ spring:
       - 127.0.0.1:9092
 api:
   kafka-uri:
-    purchase-topic: purchase-wallet
+    purchase-topic: purchase-topic
     purchase-topic-respose: purchase-topic-respose
 
 eureka:
