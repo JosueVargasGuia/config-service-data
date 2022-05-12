@@ -33,7 +33,7 @@ api:
     card-topic-respose: card-topic-respose
     movement-wallet-topic: movement-wallet
     account-wallet-topic: account-wallet-topic    
-    account-topic-respose: account-topic
+    account-topic-respose: account-topic-respose
 #    movement-wallet-topic-respone: movement-wallet-respone
 #feign:
 #  circuitbreaker:

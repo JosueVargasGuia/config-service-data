@@ -15,7 +15,7 @@ api:
     uri: credit-service/credit
   kafka-uri:  
       account-bank-topic: account-bank-topic
-      account-topic-respose: account-topic
+      account-topic-respose: account-topic-respose
 server:
   port: '8086'
 spring:
