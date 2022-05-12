@@ -10,6 +10,8 @@ api:
     customer-topic-respose: customer-topic-respose
     purchase-topic: purchase-topic
     purchase-topic-respose: purchase-topic-respose
+    purchase-agree-topic: purchase-agree-topic
+    purchase-agree-topic-respose: purchase-agree-topic-respose
 server:
   port: '8087'
 spring:
