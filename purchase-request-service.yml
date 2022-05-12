@@ -31,6 +31,9 @@ api:
     purchase-topic-respose: purchase-topic-respose
     purchase-agree-topic: purchase-agree-topic
     purchase-agree-topic-respose: purchase-agree-topic-respose
+    account-wallet-topic: account-wallet-topic
+    account-bank-topic: account-bank-topic
+    account-topic-respose: account-topic-respose
 eureka:
   client:
     service-url:

@@ -32,6 +32,8 @@ api:
     card-topic: card-topic
     card-topic-respose: card-topic-respose
     movement-wallet-topic: movement-wallet
+    account-wallet-topic: account-wallet-topic    
+    account-topic-respose: account-topic
 #    movement-wallet-topic-respone: movement-wallet-respone
 #feign:
 #  circuitbreaker:
