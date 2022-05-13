@@ -1,0 +1,57 @@
+server:
+  port: 9091
+spring:
+  data:
+    mongodb:
+      database: bank
+      port: '27017'
+      host: localhost     
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  kafka:    
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      bootstrap-servers:
+      - 127.0.0.1:9092   
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+    producer:      
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers:
+      - 127.0.0.1:9092
+#api:
+#  kafka-uri:
+#    customer-topic-bootcoin: customer-wallet-bootcoin
+#    customer-topic-respose-bootcoin: customer-topic-respose-bootcoin
+#feign:
+#  circuitbreaker:
+#    enabled: true
+#  client: 
+#    config: 
+#      default: 
+#        connectTimeout: 10000 
+#        readTimeout: 20000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8092/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
+logging:
+  file:
+    name: log/${spring.application.name}.log   
+  logback:
+    rollingpolicy:
+      max-file-size: 3MB
+      file-name-pattern: log/${spring.application.name}-%d{yyyy-MM-dd}.%i.log
+      total-size-cap: 100MB
+      clean-history-on-start: true
+      max-history: 10
