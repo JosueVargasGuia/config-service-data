@@ -10,6 +10,7 @@ spring:
     host: 192.168.1.11
     port: 6379
   kafka:    
+    bootstrap-servers: 192.168.1.11:9092
     consumer:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
@@ -25,7 +26,7 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 #      bootstrap-servers:
 #      - 192.168.1.11:9092
-   bootstrap-servers: 192.168.1.11:9092
+    
 api:
   kafka-uri:
     customer-topic: customer-wallet
