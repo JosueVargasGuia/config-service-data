@@ -9,14 +9,14 @@ spring:
   cache:
     type: redis
   redis:
-    host: ${SERVER-REDIS}
+    host: 192.168.1.11
     port: 6379
   kafka:    
     consumer:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       bootstrap-servers:
-      - ${SERVER-KAFKA}   
+      - 192.168.1.11:9092   
       properties:
         spring:
           json:
@@ -26,7 +26,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       bootstrap-servers:
-      - ${SERVER-KAFKA}    
+      - 192.168.1.11:9092
 feign:
   circuitbreaker:
     enabled: true
@@ -38,7 +38,7 @@ feign:
 eureka:
   client:
     service-url:
-      defaultZone: ${SERVER-REGISTRY}
+      defaultZone: http://192.168.1.11:8092/eureka/
     fetch-registry: true
     register-with-eureka: true
   instance:
