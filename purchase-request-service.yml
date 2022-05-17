@@ -6,6 +6,8 @@ spring:
       database: bank
       port: '27017'
       host: localhost
+  cache:
+    type: redis
   redis:
     host: 127.0.0.1.15
     port: 6379

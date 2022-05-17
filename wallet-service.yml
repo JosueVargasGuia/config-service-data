@@ -7,7 +7,7 @@ spring:
       port: '27017'
       host: localhost     
   redis:
-    host: 127.0.0.1.15
+    host: 127.0.0.1
     port: 6379
   kafka:    
     consumer:
