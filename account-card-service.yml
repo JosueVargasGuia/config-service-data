@@ -5,18 +5,18 @@ spring:
     mongodb:
       database: bank
       port: '27017'
-      host: localhost
+      host: ${SERVER-MONGO}
   cache:
     type: redis
   redis:
-    host: 127.0.0.1.15
+    host: ${SERVER-REDIS}
     port: 6379
   kafka:    
     consumer:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       bootstrap-servers:
-      - 127.0.0.1:9092   
+      - ${SERVER-KAFKA}   
       properties:
         spring:
           json:
@@ -26,7 +26,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       bootstrap-servers:
-      - 127.0.0.1:9092    
+      - ${SERVER-KAFKA}    
 feign:
   circuitbreaker:
     enabled: true
@@ -38,7 +38,7 @@ feign:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8092/eureka/
+      defaultZone: ${SERVER-REGISTRY}
     fetch-registry: true
     register-with-eureka: true
   instance:
