@@ -14,7 +14,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       bootstrap-servers:
-      - 192.168.1.11:9092
+      - 192.168.1.1:9092
       properties:
         spring:
           json:
@@ -24,7 +24,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       bootstrap-servers:
-      - 192.168.1.11:9092
+      - 192.168.1.1:9092
 api:
   kafka-uri:
     customer-topic: customer-wallet
